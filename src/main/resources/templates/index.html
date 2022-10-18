@@ -1,0 +1,177 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAILY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="carousel.css" th:href="@{/css/carousel.css}" rel="stylesheet">
+    <link rel="shortcut icon" type="image⁄x-icon" th:href="@{/image/subLogo.png}">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+            <img class="navbar-brand" th:src="@{/image/mainLogo.png}" style="padding-left: 2rem; width: 10rem;"></img>
+<!--            <a class="navbar-brand text" href="#">DAILY</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 col-md-10 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" style="font-weight: bold">영상진단</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold">자가진단</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold">질환</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold">스트레칭</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold">게시판</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-outline-primary col-md-1 mx-5" type="submit">로그인</button>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div class="position-relative overflow-hidden text-center bg-light" style="margin-top: 7rem">
+        <div>
+            <img th:src="@{/image/banner.png}" style="width: 100%">
+        </div>
+<!--        <div class=" mb-auto my-5">-->
+<!--            -->
+<!--            <p class="lead fw-normal text-black">바른 자세 교정 서비스</p>-->
+<!--            <p class="lead fw-normal text-black-30 ">DAILY는 영상 인식을 통해 사용자들이 올바른 자세를 유지할 수 있도록 도움을 주는 서비스입니다. </p>-->
+<!--        </div>-->
+
+    </div>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    <span style="font-weight: bold;">영상진단</span>
+                    <span class="text-muted" style="font-size: 2rem">Imaging Diagnosis</span>
+                </h2>
+                <br>
+                <p class="lead">&nbsp;&nbsp;영상진단 기능을 통해 현재 사용자의 자세 상태를 알아보세요</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="350"
+                     th:src="@{/image/turtleneck.JPG}" xmlns="http://www.w3.org/2000/svg" role="img"
+                     aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>
+                Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"/>
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">
+                    <span style="font-weight: bold;">자가진단</span>
+                    <span class="text-muted" style="font-size: 2rem">Self-Diagnosis </span>
+                </h2>
+                <br>
+                <p class="lead"> 자가진단 기능을 통해 골격 계통 질환에 해당되는지 알아보세요</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="200"
+                     th:src="@{/image/checklist.png}" xmlns="http://www.w3.org/2000/svg" role="img"
+                     aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>
+                Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"/>
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    <span style="font-weight: bold;">질환</span>
+                    <span class="text-muted" style="font-size: 2rem">Disease</span>
+                </h2>
+                <br>
+                <p class="lead">골격 계통 질환 종류에 대해 자세히 알아보아요</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="200"
+                     th:src="@{/image/disease.JPG}" xmlns="http://www.w3.org/2000/svg" role="img"
+                     aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>
+                Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"/>
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 order-md-2">
+                <h2 class="featurette-heading">
+                    <span style="font-weight: bold;">스트레칭</span>
+                    <span class="text-muted" style="font-size: 2rem">Stretching</span>
+                </h2>
+                <br>
+                <p class="lead">간단한 스트레칭으로 골격 계통 질환을 예방해보세요</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                     th:src="@{/image/stretching.jpg}" xmlns="http://www.w3.org/2000/svg" role="img"
+                     aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>
+                Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"/>
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+    <br><br>
+
+    <!-- FOOTER -->
+    <div style="background-color: #DDEDFC; height:100px; margin-top: -50px; margin-bottom: -100px;">
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</main>
+
+
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+</body>
+</html>
