@@ -9,14 +9,14 @@
     <link href="signup.css" th:href="@{/css/signup.css}" rel="stylesheet">
     <link rel="shortcut icon" type="image⁄x-icon" th:href="@{/image/subLogo.png}">
 
-    <title>로그인</title>
+    <title>회원가입</title>
 </head>
 <body class="text-center">
 
 <main class="form-signin w-auto m-auto">
     <form>
         <a th:href="@{/}"><img class="mb-2" th:src="@{/image/subLogo.png}" alt="" width="100"></a>
-        <h1 class="h3 mb-4 fw-normal">로그인</h1>
+        <h1 class="h3 mb-4 fw-normal">회원가입</h1>
 
         <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -27,14 +27,9 @@
             <label for="floatingPassword">Password</label>
         </div>
 
-<!--        <div class="checkbox mb-3">-->
-<!--            <label>-->
-<!--                <input type="checkbox" value="remember-me"> Remember me-->
-<!--            </label>-->
-<!--        </div>-->
-        <button class="w-100 mb-3 mt-2 btn btn-lg btn-outline-primary" type="submit">로그인</button>
+        <button class="w-100 mb-3 mt-2 btn btn-lg btn-outline-primary" type="submit">회원가입</button>
         <div class="caption text-secondary">
-            <a href="#" th:href="@{/account/signup}">회원가입 </a>|
+            <a href="#" th:href="@{/account/login}">로그인 </a>|
             <a href="#">아이디 찾기 </a>|
             <a href="#">비밀번호 찾기</a>
         </div>
