@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AccountController {
 
     @GetMapping("/login")
-    public String longin() {
+    public String login() {
         return "account/login";
     }
 }
