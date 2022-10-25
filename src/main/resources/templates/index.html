@@ -1,54 +1,11 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="carousel.css" th:href="@{/css/carousel.css}" rel="stylesheet">
-    <link rel="shortcut icon" type="image⁄x-icon" th:href="@{/image/subLogo.png}">
-
-    <title>DAILY</title>
-</head>
+<head th:replace="fragments/common :: head('DAILY')"></head>
 
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light">
-        <div class="container-fluid">
-            <a th:href="@{/}"><img class="navbar-brand" th:src="@{/image/mainLogo.png}"
-                                   style="padding-left: 2rem; width: 10rem;"></img></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 col-md-10 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#" style="font-weight: bold">영상진단</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="font-weight: bold">자가진단</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" th:href="@{/disease/index}" style="font-weight: bold">질환</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="font-weight: bold">스트레칭</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="font-weight: bold">게시판</a>
-                    </li>
-                </ul>
-
-                <a class="btn btn-outline-primary col-md-1 mx-5" type="button" href="account/login.html"
-                   th:href="@{/account/login}">로그인</a>
-            </div>
-        </div>
-    </nav>
-</header>
+<header th:replace="fragments/common :: menu('home')"></header>
 
 <main>
 
@@ -159,32 +116,9 @@
     <br><br>
 
     <!-- FOOTER -->
-    <div style="background-color: #DDEDFC; height:150px; margin-top: -50px; margin-bottom: -100px;">
-        <footer class="container">
-            <div class="text-center">
-                <img class="navbar-brand pt-4 pb-2" th:src="@{/image/subLogo.png}" style="width: 70px;"></img>
-            </div>
-            <p class="float-end">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                         class="bi bi-arrow-up-square" style="margin-top: 10px" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                    </svg>
-                </a>
-            </p>
-            <!--            <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
-            <p style="text-align:center">dudwngirl@naver.com &middot; sma07174@naver.com &middot;
-                jieun21124@naver.com</p>
-        </footer>
-    </div>
+    <div th:replace="fragments/common :: bottom"></div>
 </main>
 
-
-<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.js"></script>
+<footer th:replace="fragments/common :: footer"></footer>
 </body>
 </html>
