@@ -97,3 +97,7 @@ body {
     text-decoration: none;
 	color: rgb(95, 95, 95);
   }
+
+  .nav_ul a {
+    font-weight: bold;
+  }
