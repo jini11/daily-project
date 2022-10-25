@@ -1,10 +1,15 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<head th:replace="fragments/common :: head('공지사항')"></head>
+<head th:replace="fragments/common :: head('게시판')"></head>
 
 <body style="overflow-x: hidden;">
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" th:replace="fragments/common :: menu('board')"></nav>
+
+    <nav th:replace="fragments/common :: menu('board')">
+
+    </nav>
+
+
 
 <!-- 공지사항 -->
 <p style="text-align: center; font-size: 200%; font-weight: bold; margin-top: 10rem; margin-bottom: 5rem;">공지사항</p>
