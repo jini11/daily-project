@@ -17,4 +17,14 @@ public class AccountController {
     public String signup() {
         return "account/signup";
     }
+
+    @GetMapping("/findID")
+    public String findID() {
+        return "account/findID";
+    }
+
+    @GetMapping("/findPW")
+    public String findPW() {
+        return "account/findPW";
+    }
 }

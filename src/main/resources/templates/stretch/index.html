@@ -1,0 +1,136 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/common :: head('스트레칭')"></head>
+<body>
+
+
+<nav th:replace="fragments/common :: menu('stretch')"></nav>
+
+
+<main>
+
+    <div class="text-center">
+        <div class="col-md-12">
+            <h1 class="h1 mt-5 mb-4">
+                <span style="font-weight: bold;">스트레칭</span>
+                <span class="text-muted" style="font-size: 2rem">Stretch</span>
+            </h1>
+            <br>
+            <p class="lead mb-5">스트레칭 영상을 통해 골격 계통 질환을 치료해봐요</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <form class="text-center">
+            <div>
+                <button type="submit" class="btn btn-secondary btn-block">전체</button>
+                <button type="submit" class="btn btn-secondary btn-block">목</button>
+                <button type="submit" class="btn btn-secondary btn-block">허리</button>
+                <button type="submit" class="btn btn-secondary btn-block">어깨</button>
+                <button type="submit" class="btn btn-secondary btn-block">팔</button>
+                <button type="submit" class="btn btn-secondary btn-block">다리</button>
+            </div>
+        </form>
+        <table class="table" style="width: 70%; margin: 2% auto;">
+            <tbody>
+            <!-- 첫 번째 방법 -->
+            <tr style="border: none;">
+                <td class="main_td">
+                    <div class="row featurette">
+                        <div class="col-md-5">
+                            <video controls width="100%" height="315">
+                                <source th:src="@{/media/sea.mp4}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-7">
+                            <p class="video_title mt-5">딱 10분! 거북목, 버섯증후군이 있다면 이 운동 제발 하셔야 합니다! 일자목, 거북목 스트레칭,
+                                버섯증후군교정운동</p>
+                            <br>
+                            <p class="video_uploader">자세요정 JSYJ</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- 두 번째 방법 -->
+            <tr style="border: none;">
+                <td class="main_td">
+                    <div class="row featurette">
+                        <div class="col-md-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kgCj8UUEWjU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <!--                    <p style="font-size: 110%;">iOS 12.x 버전 업데이터 지원 중단 안내</p>&nbsp;&nbsp;&nbsp;-->
+                        <div class="col-md-7">
+                            <p class="video_title mt-5">딱 10분! 거북목, 버섯증후군이 있다면 이 운동 제발 하셔야 합니다! 일자목, 거북목 스트레칭,
+                                버섯증후군교정운동</p>
+                            <br>
+                            <p class="video_uploader">자세요정 JSYJ</p>
+                        </div>
+                    </div>
+                    <!--                    <p class="notice_date">2021.12.06</p>-->
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--        <nav aria-label="Page navigation example" style="margin: 0 auto; margin-top: 5%;">-->
+        <!--            <ul class="pagination justify-content-center">-->
+        <!--                <li class="page-item" th:classappend="${1 == boards.pageable.pageNumber + 1} ? 'disabled'">-->
+        <!--                    <a class="page-link" href="#"-->
+        <!--                       th:href="@{/board/list(page=${boards.pageable.pageNumber - 1},searchText=${param.searchText})}"-->
+        <!--                       tabindex="-1" aria-disabled="true"><</a>-->
+        <!--                </li>-->
+        <!--                <li class="page-item" th:classappend="${i == boards.pageable.pageNumber + 1} ? 'disabled'"-->
+        <!--                    th:each="i: ${#numbers.sequence(startPage, endPage)}">-->
+        <!--                    <a class="page-link" href="#" th:href="@{/board/list(page=${i - 1},searchText=${param.searchText})}"-->
+        <!--                       th:text="${i}">1</a>-->
+        <!--                </li>-->
+        <!--                <li class="page-item"-->
+        <!--                    th:classappend="${boards.totalPages == boards.pageable.pageNumber + 1} ? 'disabled'">-->
+        <!--                    <a class="page-link" href="#"-->
+        <!--                       th:href="@{/board/list(page=${boards.pageable.pageNumber + 1},searchText=${param.searchText})}">></a>-->
+        <!--                </li>-->
+        <!--            </ul>-->
+        <!--        </nav>-->
+
+    </div>
+    <!--    <div class="album py-5 bg-light">-->
+    <!--        <div class="container" style="margin-bottom:3%">-->
+
+    <!--            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">-->
+    <!--                <div class="col">-->
+    <!--                    <div class="card shadow-sm">-->
+    <!--                        <video controls width="450px;" height="300px;">-->
+    <!--                            <source src="./media/sea.mp4" type="video/mp4">-->
+    <!--                        </video>-->
+
+    <!--                        <div class="text-center">-->
+    <!--                            <h5 style="font-weight:bold;margin-top:3%">거북목 증후군</h5>-->
+    <!--                        </div>-->
+    <!--                        <div class="card-body">-->
+    <!--                            <p class="card-text">잘못된 자세로 인해 목, 어깨의 근육과 인대가 늘어나 통증이 생기는 증상을 의미합니다.</p>-->
+    <!--                            <div class="d-flex justify-content-between align-items-center">-->
+    <!--                                <small class="text-muted">2022-10-23</small>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+
+</main>
+
+<!-- FOOTER -->
+<div th:replace="fragments/common :: bottom"></div>
+
+
+<!--<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+<footer th:replace="fragments/common :: footer"></footer>
+
+</body>
+</html>

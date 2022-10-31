@@ -5,23 +5,11 @@
 <body>
 
 
-    <nav th:replace="fragments/common :: menu('disease')"></nav>
+<nav th:replace="fragments/common :: menu('disease')"></nav>
 
 
 <main>
 
-<!--    <section class="py-5 text-center container">-->
-<!--        <div class="row py-lg-5">-->
-<!--            <div class="col-lg-6 col-md-8 mx-auto">-->
-<!--                <h1 class="fw-light">Album example</h1>-->
-<!--                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>-->
-<!--                <p>-->
-<!--                    <a href="#" class="btn btn-primary my-2">Main call to action</a>-->
-<!--                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
     <div class="text-center">
         <div class="col-md-12">
             <h1 class="h1 mt-5 mb-4">
@@ -35,15 +23,18 @@
 
 
     <div class="album py-5 bg-light">
-        <div class="container">
+        <div class="container" style="margin-bottom:3%">
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" th:src="@{/image/disease_turtleneck.JPG}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text fill="#eceeef" dy=".3em" style="text-align: center;"> 거북목 증후군</text></svg>
+                        <img th:src="@{/image/disease_turtleneck5.png}">
 
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">거북목 증후군</h5>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">거북목 증후군은 잘못된 자세로 인해 목, 어깨의 근육과 인대가 늘어나 통증이 생기는 증상을 의미합니다. 평소 컴퓨터 모니터를 많이 보는 사람, 특히 낮은 위치에 있는 모니터를 내려다보는 사람에게 많이 발생합니다. 거북이가 목을 뺀 상태와 비슷하다 하여 거북목 증후군이라는 이름이 붙여졌습니다.</p>
+                            <p class="card-text">잘못된 자세로 인해 목, 어깨의 근육과 인대가 늘어나 통증이 생기는 증상을 의미합니다.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">2022-10-23</small>
                             </div>
@@ -52,10 +43,13 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img svg class="bd-placeholder-img card-img-top" th:src="@{/image/disease_scoliosis.JPG}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">척추측만증</text></svg>
+                        <img th:src="@{/image/disease_scoliosis.JPG}">
 
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">척추측만증</h5>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">사람을 앞에서 바라보았을 때 일자가 아니고 옆으로 휘어 있는 경우, 사람을 옆에서 바라보았을 때 정상적으로 관찰되는 세 개의 만곡(휘어져 있는 상태)에 문제가 생긴 경우는 척추 변형에 해당합니다. 척추측만증은 척추가 옆으로 휜 경우에 속하는 대표적인 척추 변형 중 하나입니다</p>
+                            <p class="card-text">척추가 옆으로 휜 경우에 속하는 대표적인 척추 변형 중 하나입니다</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">2022-10-23</small>
                             </div>
@@ -64,35 +58,13 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img svg class="bd-placeholder-img card-img-top" th:src="@{/image/disease_frozen shoulder.jpg}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">오십견</text></svg>
+                        <img th:src="@{/image/disease_frozen shoulder.jpg}">
 
-                        <div class="card-body">
-                            <p class="card-text">동결견(오십견)은 특별한 외상 없이 어깨에 통증이 발생하고 그 통증으로 인하여 어깨의 움직임에 지장이 생기는 질환을 의미합니다. 원인은 불분명하지만, 주로 노화 및 운동 부족과 관련됩니다. 노화에 따라 어깨관절 주위의 연부 조직이 퇴행성으로 변화하여 오십견이 생깁니다. 간혹 특별한 원인 없이 발생하기도 합니다. </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">2022-10-23</small>
-                            </div>
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">오십견</h5>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img svg class="bd-placeholder-img card-img-top" th:src="@{/image/disease_disk.png}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">허리디스크</text></svg>
-
                         <div class="card-body">
-                            <p class="card-text">척추뼈 사이에는 척추뼈끼리 부딪치는 것을 막아주는 쿠션 같은 역할을 하는 '디스크'라는 말랑말랑한 젤리 같은 구조물이 있습니다. 갑자기 무거운 물건을 들어 올리거나, 부자연스러운 자세를 오랫동안 취하면 디스크에 무리한 힘이 가해지면서 디스크가 밖으로 돌출됩니다. 돌출된 디스크는 척추의 어느 부위에나 생길 수 있습니다. </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">2022-10-23</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img svg class="bd-placeholder-img card-img-top" th:src="@{/image/disease_rcs.png}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">회전근개증후군</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">회전근개 증후군은 회전근개에 변형과 파열이 생긴 질환을 말합니다. 회전근개란 어깨와 팔을 연결하는 4개의 근육 및 힘줄로 이루어져 있는 것입니다. 회전근개 증후군 증상은 목과 어깨 부위에 나타납니다. 팔을 들거나 손을 등 뒤로 했을 때 통증이 심해집니다.어깨 근육의 통증을 막연히 오십견으로 알고 방치하다가 치료 시기가 늦어지는 경우가 있습니다.</p>
+                            <p class="card-text">특별한 외상 없이 어깨에 통증이 발생하고 그 통증으로 인하여 어깨의 움직임에 지장이 생기는 질환을 의미합니다.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">2022-10-23</small>
                             </div>
@@ -102,10 +74,16 @@
 
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img svg class="bd-placeholder-img card-img-top" th:src="@{/image/disease_hand.png}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">손목 터널 증후군</text></svg>
 
+                        <img th:src="@{/image/disease_disk.png}">
+
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">허리디스크</h5>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">손목에는 손가락을 움직이는 힘줄과 신경이 지나가며, 이를 둘러싸고 보호하는 터널이 있습니다. 손목 터널 증후군은 손으로 들어가는 신경이 손가락을 움직이는 힘줄인 손목 터널에 눌려 압박을 받아 손 저림, 감각 저하 등의 증상이 나타나는 질환을 의미합니다. 이 증상을 대부분 혈액 순환 장애 등과 같은 다른 문제로 생각하여 치료 시기가 지연되는 경우가 많습니다.</p>
+                            <p class="card-text">
+                                척추 뼈와 뼈 사이의 구조물인 디스크가 탈출된 증상을 의미합니다.
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">2022-10-23</small>
                             </div>
@@ -115,48 +93,99 @@
 
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img svg class="bd-placeholder-img card-img-top" th:src="@{/image/disease_knee.png}" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">퇴행성 관절염</text></svg>
+                        <img th:src="@{/image/disease_rcs.png}">
+
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">회전근개 증후군</h5>
+                        </div>
 
                         <div class="card-body">
-                            <p class="card-text">골관절염은 뼈의 관절면을 감싸고 있는 관절 연골이 마모되어 연골 밑의 뼈가 노출되고, 관절 주변의 활액막에 염증이 생겨서 통증과 변형이 발생하는 질환입니다. 흔히 퇴행성 관절염이라고도 불리우며 관절 질환 중에서 가장 많이 발생하는 질환입니다. 그러나 나이가 들면서 발생하는 질환은 아닙니다. </p>
+                            <p class="card-text">회전근개 증후군은 회전근개에 변형과 파열이 생긴 질환을 의미합니다.
+                                회전근개 증후군 증상은 목과 어깨 부위에 나타납니다.
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">2022-10-23</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <img th:src="@{/image/disease_hand.png}">
 
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">손목 터널 증후군</h5>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">
+                                손으로 들어가는 신경이 손가락을 움직이는 힘줄인 손목 터널에 눌려 압박을 받아 손 저림,
+                                감각 저하 등의 증상이 나타나는 질환을 의미합니다.
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
+                                <small class="text-muted">2022-10-23</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <img th:src="@{/image/disease_roundshoulder.jpg}">
 
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">라운드 숄더(굽은 어깨)</h5>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                            <p class="card-text">
+                                컴퓨터나 스마트폰만 보면 어깨가 사정없이 말리는 사람을 말한다.
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
+                                <small class="text-muted">2022-10-23</small>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img th:src="@{/image/disease_bowlegs.png}">
+
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">휜 다리</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">
+                                유전, 고관절의 변형, 종아리의 변형, 발의 변형, 평소 잘못된 자세 습관 등으로 다리가 휘는 증상을 의미합니다.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">2022-10-23</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img th:src="@{/image/disease_halluxValgus.jpg}">
+
+                        <div class="text-center">
+                            <h5 style="font-weight:bold;margin-top:3%">무지외반증</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">
+                                엄지발가락이 둘재발가락 쪽으로 심하게 휘어져서 엄지발가락 관절이 안쪽으로 돌출된 상태를 의미합니다.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">2022-10-23</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

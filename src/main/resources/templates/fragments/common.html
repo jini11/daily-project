@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#" th:href="@{/disease/index}">질환 <span class="visually-hidden" th:if="${menu} == 'disease'">(current)</span></a>
                     </li>
                     <li class="nav-item" th:classappend="${menu} == 'stretch' ? 'active'">
-                        <a class="nav-link" href="#">스트레칭 <span class="visually-hidden" th:if="${menu} == 'stretch'">(current)</span></a>
+                        <a class="nav-link" href="#" th:href="@{/stretch/index}">스트레칭 <span class="visually-hidden" th:if="${menu} == 'stretch'">(current)</span></a>
                     </li>
                     <li class="nav-item" th:classappend="${menu} == 'board' ? 'active'">
                         <a class="nav-link" href="#" th:href="@{/board/list}">게시판 <span class="visually-hidden" th:if="${menu} == 'board'">(current)</span></a>
