@@ -5,16 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/disease")
-public class DiseaseController {
+@RequestMapping("/self")
+public class SelfController {
 
     @GetMapping("/index")
     public String index() {
-        return "disease/index";
-    }
-
-    @GetMapping("/disease_turtleneck")
-    public String diseaseTurtleNeck() {
-        return "/disease/disease_turtleneck";
+        return "self/index";
     }
 }
