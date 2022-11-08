@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface SurveyRepository extends JpaRepository<Survey, Long> {
 
-    List<Survey> findByType(int type);
+    List<Survey> findByType(Long type);
 }
