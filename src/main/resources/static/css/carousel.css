@@ -193,3 +193,32 @@ body {
      line-height: 1.5;
      font-size: 17px;
   }
+
+  /* 게시판 */
+  .main_notice {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .main_notice td {
+    margin-top: 2rem;
+    margin-left: 35rem;
+    width: 40%;
+    height: 8rem;
+    border-bottom: 1px solid gray;
+    list-style: none;
+  }
+
+  .main_notice a {
+    text-decoration: none;
+  }
+
+  .notice_date {
+    font-size: 100%;
+  }
+
+  .notice_td {
+    text-align: left;
+    padding-left: 2rem;
+  }
