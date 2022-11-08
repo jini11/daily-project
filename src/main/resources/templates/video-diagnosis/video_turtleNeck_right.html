@@ -21,7 +21,6 @@
                 left: 30%;
             }
 
-
     </style>
 </head>
 
@@ -51,6 +50,7 @@
 <footer th:replace="fragments/common :: footer"></footer>
 <script th:src="@{/javascript/turtleNeck_right.js}"></script>
 <script type="text/javascript">
+/*
             function speech(text) {
                  if (!window.speechSynthesis) {
                      alert("음성 재생을 지원하지 않는 브라우저입니다. 크롬, 파이어폭스 등의 최신 브라우저를 이용하세요");
@@ -69,12 +69,9 @@
                 const text = document.getElementById("result_label");
                 speech("진단 시작");
             })
-
+*/
             window.addEventListener('message', function(e) {
-                String result = "진단 결과 " + e.data + " 입니다.";
                 document.getElementById('result_label').innerHTML = "진단 결과: " + e.data + "입니다.";
-
-                speech("진단 완료");
             });
 
 </script>
