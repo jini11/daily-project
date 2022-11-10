@@ -232,15 +232,16 @@ body {
 
   .jb-wrap img {
   	vertical-align: middle;
+  	width: 700px;
   }
 
   .jb-text {
-    width: 80%;
+    width: 110%;
   	padding: 5px 10px;
   	position: absolute;
   	top: 50%;
   	left: 50%;
-  	transform: translate( -30%, -40% );
+  	transform: translate( -25%, -40% );
   }
 
   .jb-text input[type="checkbox"] {

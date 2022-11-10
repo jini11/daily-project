@@ -1,12 +1,8 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/common :: head('거북목 영상진단')"></head>
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <title>거북목 영상진단</title>
-
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@2.2.2/dist/posenet.min.js"></script>
 
@@ -25,6 +21,8 @@
                 left: 30%;
             }
 
+
+
     </style>
 </head>
 
@@ -38,9 +36,8 @@
 
 <div class="container">
     <div class="mt-4">
-        <p id="text" >진단을 시작합니다.</p>
         <h3 id="result_label">진단을 진행하고 있습니다.(약 10초 소요)</h3>
-        <a class="btn btn-outline-primary float-end" type="button" th:href="@{/video-diagnosis/video_turtleNeck_right}">다시
+        <a class="btn btn-outline-primary float-end" type="button" th:href="@{/video-diagnosis/video_turtleNeck_left}">다시
             검사하기</a>
     </div>
     <div class="mb-5" style="margin-top: 5rem;">
@@ -48,8 +45,6 @@
         <canvas id="canvas"></canvas>
     </div>
 </div>
-
-<footer th:replace="fragments/common :: footer"></footer>
 
 <script th:src="@{/javascript/turtleNeck_left.js}"></script>
 <script type="text/javascript">
