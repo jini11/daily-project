@@ -24,7 +24,13 @@
 
     <div class="album py-5 bg-light">
         <div class="container" style="margin-bottom:3%">
-
+            <form class="form-inline d-flex justify-content-end mb-3" method="GET" th:action="@{/stretch/index}">
+                <div class="form-group mx-sm-2 mb-2">
+                    <!--            <label for="searchText" class="sr-only">검색</label>-->
+                    <input type="text" class="form-control" id="searchText" name="searchText" th:value="${param.searchText}">
+                </div>
+                <button type="submit" class="btn btn-secondary mb-2">검색</button>
+            </form>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col" th:each="stretch : ${stretches}">
                     <div class="card shadow-sm" >

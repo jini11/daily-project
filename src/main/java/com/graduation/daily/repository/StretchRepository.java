@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface StretchRepository extends JpaRepository<Stretch, Long> {
     List<Stretch> findAll();
-    //List<Stretch> findBySearch(String searchText);
+    List<Stretch> findByTitleContaining(String title);
 
 }

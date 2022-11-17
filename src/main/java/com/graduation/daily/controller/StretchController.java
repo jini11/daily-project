@@ -21,11 +21,11 @@ public class StretchController {
     @GetMapping("/index")
     public String index(Model model, @RequestParam(required = false, defaultValue = "") String searchText) {
         List<Stretch> stretches;
-        //if (searchText.equals("")) {
+        if (searchText.equals("")) {
             stretches = stretchRepository.findAll();
-//        } else {
-//            stretches = stretchRepository.findBySearch(searchText);
-//        }
+        } else {
+            stretches = stretchRepository.findByTitleContaining(searchText);
+        }
         for (Stretch stretch : stretches) {
             String url = stretch.getUrl();
             url = url.split("v=")[1];
