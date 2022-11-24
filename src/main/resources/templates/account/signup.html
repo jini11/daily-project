@@ -27,11 +27,11 @@
         <button class="w-50 mb-3 mt-2 btn btn-sm btn-primary" type="submit">중복 확인</button>
 
         <div class="form-floating">
-            <input type="password" th:field="*{password1}" class="form-control" placeholder="Password">
+            <input type="password" th:field="*{password1}" id="password1" class="form-control" placeholder="Password">
             <label for="password1">Password</label>
         </div>
         <div class="form-floating">
-            <input type="password" th:field="*{password2}"class="form-control" placeholder="Password">
+            <input type="password" th:field="*{password2}" id="password2" class="form-control" placeholder="Password">
             <label for="password2">비밀번호 확인</label>
         </div>
         <div class="form-floating" >
@@ -49,10 +49,7 @@
     </form>
 </main>
 
-<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+<footer th:replace="fragments/common :: footer"></footer>
 </body>
 </html>

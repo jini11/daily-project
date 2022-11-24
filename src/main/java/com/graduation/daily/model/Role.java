@@ -1,6 +1,7 @@
 package com.graduation.daily.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.graduation.daily.user.User_register;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,5 +18,5 @@ public class Role {
 
     @ManyToMany(mappedBy = "roles")
     @JsonIgnore
-    private List<User> users;
+    private List<User_register> users;
 }

@@ -26,15 +26,15 @@
 
 
         <div class="form-floating">
-            <input type="text" class="form-control" id="userid" placeholder="id">
+            <input type="text" class="form-control" id="userid" name="userid" placeholder="id">
             <label for="userid">ID</label>
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="password" placeholder="Password">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
             <label for="password">Password</label>
         </div>
 
-        <button class="w-100 mb-3 mt-2 btn btn-lg btn-outline-primary" type="submit">로그인</button>
+        <button type="submit" class="w-100 mb-3 mt-2 btn btn-lg btn-outline-primary">로그인</button>
         <div class="caption text-secondary">
             <a href="#" th:href="@{/account/signup}">회원가입 </a>|
             <a href="#">아이디 찾기 </a>|
@@ -43,10 +43,7 @@
     </form>
 </main>
 
-<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.js"></script>
+
+<footer th:replace="fragments/common :: footer"></footer>
 </body>
 </html>

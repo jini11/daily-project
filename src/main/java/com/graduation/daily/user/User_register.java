@@ -1,20 +1,16 @@
 package com.graduation.daily.user;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.persistence.*;
 
-import lombok.Getter;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.graduation.daily.model.Role;
+import lombok.Data;
 
-@Getter
-@Setter
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
+@Data
 public class User_register {
 
     @Id
@@ -28,6 +24,13 @@ public class User_register {
 
     private String password;
 
-
+    @JsonIgnore
+    @ManyToMany
+    @JoinTable(
+            name = "user_role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private List<Role> roles = new ArrayList<>();
 
 }
